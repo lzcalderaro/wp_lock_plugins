@@ -1,0 +1,14 @@
+{
+  "name": "Lock Plugins",
+  "version": "1.0.0",
+  "description": "Protected plugins from disable",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzcalderaro/wp_lock_plugins"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {},
+  "scripts": {}
+}

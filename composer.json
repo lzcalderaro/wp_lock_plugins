@@ -1,0 +1,43 @@
+{
+  "name": "lock-plugins",
+  "description": "Protected plugins from disable",
+  "type": "wordpress-plugin",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/lzcalderaro/wp_lock_plugins",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "log.OSCON, Lda",
+      "email": "engenharia@log.pt",
+      "homepage": "http://log.pt/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/lzcalderaro/wp_lock_plugins/issues",
+    "source": "https://github.com/lzcalderaro/wp_lock_plugins"
+  },
+  "autoload": {
+    "psr-4": {
+      "LockPlugins\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LockPlugins\\": "tests/"
+    }
+  },
+  "require": {
+    "composer/installers": "~1.0",
+    "php": ">=5.5.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*@stable",
+    "10up/wp_mock": "dev-master"
+  },
+  "suggest": {
+
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

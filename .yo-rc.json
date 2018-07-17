@@ -1,0 +1,16 @@
+{
+  "generator-log-wp-plugin": {
+    "plugin_name": "Lock Plugins",
+    "vendor_name": "Lock Plugins",
+    "plugin_url": "https://github.com/lzcalderaro/wp_lock_plugins",
+    "project_url": "https://github.com/lzcalderaro/wp_lock_plugins",
+    "plugin_description": "Protected plugins from disable",
+    "text_domain": "lock-plugins",
+    "namespace": "LockPlugins",
+    "tests_namespace": "LockPlugins",
+    "name_composer": "lock-plugins",
+    "version": "1.0.0",
+    "git_issues": "https://github.com/lzcalderaro/wp_lock_plugins/issues",
+    "git_source": "https://github.com/lzcalderaro/wp_lock_plugins"
+  }
+}
