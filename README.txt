@@ -1,5 +1,5 @@
 # Lock Plugins #
-Contributors: log.OSCON <engenharia@log.pt>
+Contributors: Luiz Calderaro <lzcalderaro@gmail.com>
 Tags:
 Requires at least:  4.5.6
 Tested up to: 4.7

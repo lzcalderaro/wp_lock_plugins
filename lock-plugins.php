@@ -17,8 +17,7 @@
  * Plugin URI:        https://github.com/lzcalderaro/wp_lock_plugins
  * Description:       Protected plugins from disable
  * Version:           1.0.0
- * Author:            log.OSCON, Lda.
- * Author URI:        http://log.pt/
+ * Author:            Luiz Calderaro
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       lock-plugins

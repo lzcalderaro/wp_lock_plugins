@@ -7,9 +7,8 @@
   "license": "GPL-2.0+",
   "authors": [
     {
-      "name": "log.OSCON, Lda",
-      "email": "engenharia@log.pt",
-      "homepage": "http://log.pt/"
+      "name": "Luiz Calderaro",
+      "email": "lzcalderaro@gmail.com"
     }
   ],
   "support": {

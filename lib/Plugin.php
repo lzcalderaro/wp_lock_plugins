@@ -69,7 +69,36 @@ class Plugin {
 	 * @since    1.0.0
 	 */
 	public function run() {
-		$this->set_locale();
+		$this->set_admin_hooks();
+	}
+
+	/**
+	 * Set all hooks.
+	 *
+	 * @since  1.0.0
+	 * @return void
+	 */
+	private function set_admin_hooks() {
+		add_action( 'admin_menu', array( $this, 'options_page' ) );
+	}
+
+	/**
+	 * Set method to add options page.
+	 *
+	 * @since  1.0.0
+	 * @return void
+	 */
+	public function options_page() {
+
+		$options_page = new View\OptionPage();
+
+		add_options_page(
+			__( 'Lock Plugins', 'wp_lock_plugins' ),
+			__( 'Lock Plugins', 'wp_lock_plugins' ),
+			'manage_options',
+			'wp_lock_plugins.php',
+			array( $options_page, 'wp_lock_page' )
+		);
 	}
 
 	/**
