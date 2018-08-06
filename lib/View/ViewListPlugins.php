@@ -62,8 +62,8 @@ class ViewListPlugins extends WP_List_Table {
 	public function get_columns() {
 
 		$columns = array(
-			'status'  => 'status',
 			'plugin'  => 'Plugin',
+			'status'  => 'status',
 			'version' => 'Version',
 			'author'  => 'Author',
 		);
@@ -115,11 +115,11 @@ class ViewListPlugins extends WP_List_Table {
 
 		foreach ( $plugins as $plugin ) {
 
-			$checked = in_array( $plugin['path'], $get_locked_plugin ) ? 'checked': '';
-			$status  = "<input type='checkbox' {$checked} name='lock_list[]' value='{$plugin[path]}' /> Locked";
-			$data[]  = array(
-				'status'  => $status,
-				'plugin'  => $plugin['name'],
+			$checked     = in_array( $plugin['path'], $get_locked_plugin ) ? 'checked' : '';
+			$plugin_name = "<input type='checkbox' {$checked} name='lock_list[]' value='{$plugin[path]}' /> {$plugin['name']}";
+			$data[]      = array(
+				'plugin'   => $plugin_name,
+				'status'  => empty( $checked ) ? __( 'Unlocked', 'wp_lock_plugins' ) : __( 'Locked', 'wp_lock_plugins' ),
 				'version' => $plugin['version'],
 				'author'  => $plugin['author'],
 			);
