@@ -103,13 +103,20 @@ class ViewListPlugins extends WP_List_Table {
 	 */
 	private function table_data() {
 
-		$data    = array();
-		$plugins = GetPlugins::get_all_plugins();
+		$data              = array();
+		$plugins           = GetPlugins::get_all_plugins();
+		$get_locked_plugin = get_option( 'lock_plugins_list' );
+
+		if ( empty( $get_locked_plugin ) || $get_locked_plugin === false ) {
+			$get_locked_plugin = array();
+		}
 
 		foreach ( $plugins as $plugin ) {
 
-			$data[] = array(
-				'status'  => 'status',
+			$checked = in_array( $plugin['path'], $get_locked_plugin ) ? 'checked': '';
+			$status  = "<input type='checkbox' {$checked} name='lock_list[]' value='{$plugin[path]}' /> Locked";
+			$data[]  = array(
+				'status'  => $status,
 				'plugin'  => $plugin['name'],
 				'version' => $plugin['version'],
 				'author'  => $plugin['author'],

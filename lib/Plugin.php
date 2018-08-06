@@ -80,6 +80,9 @@ class Plugin {
 	 */
 	private function set_admin_hooks() {
 		add_action( 'admin_menu', array( $this, 'options_page' ) );
+		add_action( 'admin_post_save_lock_plugins', array( Requests\LockPlugins::class, 'save_plugin_list' ) );
+		add_action( 'deactivated_plugin', array( Requests\LockPlugins::class, 'remove_disable' ) );
+		add_action( 'admin_notices', array( View\Messages::class, 'throw_messages' ) );
 	}
 
 	/**

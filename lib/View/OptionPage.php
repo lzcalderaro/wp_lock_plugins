@@ -34,11 +34,15 @@ class OptionPage {
 		$list_table->prepare_items();
 
 		?>
+		<form method="POST" action="<?php echo admin_url( 'admin-post.php' ); ?>">
 			<div class="wrap">
 				<div id="icon-users" class="icon32"></div>
 				<h2>Lock Plugins</h2>
 				<?php $list_table->display(); ?>
 			</div>
+			<input type="hidden" name="action" value="save_lock_plugins" >
+			<?php echo submit_button( 'Save' ); ?>
+		</form>
 		<?php
 	}
 }
