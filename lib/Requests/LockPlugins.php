@@ -42,9 +42,12 @@ class LockPlugins {
 			delete_option( static::OPTION_NAME );
 		}
 
-		add_option( static::OPTION_NAME, $_POST['lock_list'] );
+		$response = '&lock_message=2';
+		if ( add_option( static::OPTION_NAME, $_POST['lock_list'] ) === false ) {
+			$response = '&lock_message=3';
+		}
 
-		wp_safe_redirect( admin_url( '/options-general.php?page=wp_lock_plugins.php' ), 301 );
+		wp_safe_redirect( admin_url( '/options-general.php?page=wp_lock_plugins.php' . $response ), 301 );
 		wp_exit();
 	}
 
@@ -67,7 +70,7 @@ class LockPlugins {
 		$option_value = unserialize( $states[0]->option_value );
 
 		if ( is_array( $option_value ) && in_array( $plugin, $option_value ) ) {
-			wp_safe_redirect( '/wp-admin/plugins.php?lock_plugins=1' );
+			wp_safe_redirect( '/wp-admin/plugins.php?lock_message=1' );
 			wp_exit();
 		}
 	}

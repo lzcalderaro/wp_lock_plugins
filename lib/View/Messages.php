@@ -28,21 +28,31 @@ class Messages {
 	 */
 	public function throw_messages() {
 
-		if ( empty( $_GET['lock_plugins'] ) ) {
+		if ( empty( $_GET['lock_message'] ) ) {
 			return;
 		}
 
 		$message = '';
-		switch ( $_GET['lock_plugins'] ) {
+		$status  = 'error';
+
+		switch ( $_GET['lock_message'] ) {
 			case 1:
-				$message = __( 'Plugin locked', 'lock-plugins' );
+				$message = __( 'Plugin locked', 'wp_lock_plugins' );
+			break;
+			case 2:
+				$message = __( 'Saved successfully', 'wp_lock_plugins' );
+				$status = 'success';
+			break;
+			case 3:
+				$message = __( 'Error saving', 'wp_lock_plugins' );
 			break;
 		}
 
 		printf(
-			'<div class="notice notice-error is-dismissible">
+			'<div class="notice notice-%s is-dismissible">
 			<p><strong>%s</strong></p>
 			</div>',
+			$status,
 			$message
 		);
 	}
