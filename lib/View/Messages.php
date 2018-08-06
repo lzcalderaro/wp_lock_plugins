@@ -41,7 +41,7 @@ class Messages {
 
 		printf(
 			'<div class="notice notice-error is-dismissible">
-			<strong>%s</strong>
+			<p><strong>%s</strong></p>
 			</div>',
 			$message
 		);

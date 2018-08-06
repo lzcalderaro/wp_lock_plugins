@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Option Page view.
+ * Manage all plugins requests.
  *
  * @link       https://github.com/lzcalderaro/wp_lock_plugins
  * @since      1.0.0
@@ -12,9 +12,7 @@
 namespace LockPlugins\Requests;
 
 /**
- * Fired during plugin activation.
- *
- * This class defines all code necessary to run during the plugin's activation.
+ * Manage all plugins requests.
  *
  * @since      1.0.0
  * @package    Lock Plugins
@@ -22,10 +20,14 @@ namespace LockPlugins\Requests;
  */
 class LockPlugins {
 
+	/**
+	 * Option name to save, update and consult.
+	 * @since 1.0.0
+	 */
 	const OPTION_NAME = 'lock_plugins_list';
 
 	/**
-	 * Save list lock plugins.
+	 * Save plugins list.
 	 *
 	 * @since  1.0.0
 	 * @return void
@@ -42,7 +44,7 @@ class LockPlugins {
 
 		add_option( static::OPTION_NAME, $_POST['lock_list'] );
 
-		wp_redirect( admin_url( '/options-general.php?page=wp_lock_plugins.php' ), 301 );
+		wp_safe_redirect( admin_url( '/options-general.php?page=wp_lock_plugins.php' ), 301 );
 		wp_exit();
 	}
 
@@ -66,9 +68,7 @@ class LockPlugins {
 
 		if ( is_array( $option_value ) && in_array( $plugin, $option_value ) ) {
 			wp_safe_redirect( '/wp-admin/plugins.php?lock_plugins=1' );
-			exit;
+			wp_exit();
 		}
 	}
-
-
 }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Manage all plugins.
+ * Create view list.
  *
  * @link       https://github.com/lzcalderaro/wp_lock_plugins
  * @since      1.0.0
@@ -15,9 +15,7 @@ use LockPlugins\Utils\GetPlugins;
 use WP_List_Table;
 
 /**
- * Fired during plugin activation.
- *
- * This class defines all code necessary to run during the plugin's activation.
+ * Create view list.
  *
  * @since      1.0.0
  * @package    Lock Plugins
@@ -56,8 +54,9 @@ class ViewListPlugins extends WP_List_Table {
 	}
 
 	/**
-	 * Override the parent columns method. Defines the columns to use in your listing table
+	 * Override the parent columns method. Defines the columns to use in your listing table.
 	 *
+	 * @since  1.0.0
 	 * @return Array
 	 */
 	public function get_columns() {
@@ -73,8 +72,9 @@ class ViewListPlugins extends WP_List_Table {
 	}
 
 	/**
-	 * Define which columns are hidden
+	 * Define which columns are hidden.
 	 *
+	 * @since  1.0.0
 	 * @return Array
 	 */
 	public function get_hidden_columns() {
@@ -84,6 +84,7 @@ class ViewListPlugins extends WP_List_Table {
 	/**
 	 * Define the sortable columns.
 	 *
+	 * @since  1.0.0
 	 * @return Array
 	 */
 	public function get_sortable_columns() {
@@ -95,6 +96,7 @@ class ViewListPlugins extends WP_List_Table {
 			),
 		);
 	}
+
 	/**
 	 * Get the table data.
 	 *
@@ -125,8 +127,9 @@ class ViewListPlugins extends WP_List_Table {
 
 		return $data;
 	}
+
 	/**
-	 * Define what data to show on each column of the table
+	 * Define what data to show on each column of the table.
 	 *
 	 * @since  1.0.0
 	 * @param  Array $item        Data

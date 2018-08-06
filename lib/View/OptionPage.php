@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Option Page view
+ * Option Page view.
  *
  * @link       https://github.com/lzcalderaro/wp_lock_plugins
  * @since      1.0.0
@@ -12,9 +12,7 @@
 namespace LockPlugins\View;
 
 /**
- * Fired during plugin activation.
- *
- * This class defines all code necessary to run during the plugin's activation.
+ * Option Page view
  *
  * @since      1.0.0
  * @package    Lock Plugins

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Manage all plugins.
+ * List all plugins info.
  *
  * @link       https://github.com/lzcalderaro/wp_lock_plugins
  * @since      1.0.0
@@ -12,9 +12,7 @@
 namespace LockPlugins\Utils;
 
 /**
- * Fired during plugin activation.
- *
- * This class defines all code necessary to run during the plugin's activation.
+ * List all plugins info.
  *
  * @since      1.0.0
  * @package    Lock Plugins
@@ -23,7 +21,7 @@ namespace LockPlugins\Utils;
 class GetPlugins {
 
 	/**
-	 * View to list all plugins.
+	 * List all plugins to lock.
 	 *
 	 * @since  1.0.0
 	 * @return void
