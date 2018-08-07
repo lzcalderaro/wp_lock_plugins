@@ -29,14 +29,6 @@ Users with no authorization will not be able to activacte or deactivate installe
 4. Select the plugins you want to prevent users from activating or deactivating.
 5. Click "Save"
 
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
 == CONTRIBUTING ==
 We’d love to have you join in on development over on [GitHub Pages](https://github.com/lzcalderaro/wp-lock-plugins).
 
