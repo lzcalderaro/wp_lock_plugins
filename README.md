@@ -29,7 +29,7 @@ Users with no authorization will not be able to activacte or deactivate installe
 4. Select the plugins you want to prevent users from activating or deactivating.
 5. Click "Save"
 
-== CONTRIBUTING ==
+== CONTRIBUTING ==\
 We’d love to have you join in on development over on [GitHub Pages](https://github.com/lzcalderaro/wp-lock-plugins).
 
 == Changelog ==
