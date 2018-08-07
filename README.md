@@ -7,7 +7,7 @@ Stable tag:  4.7
 License: GPL-2.0 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
-Prevent users from activating or deactivating plugins.
+Locks the plugin status to prevent users from activating or deactivating plugins.
 
 == Description ==
 
@@ -15,9 +15,11 @@ Allow or prevent users from activating or deactivating installed plugins.
 
 On a multisite instalation, management is done per site.
 
-Simply click the checkbox to prevent user management of plugin deactivation.
+Simply click the checkbox to prevent user management of plugin.
 
 The plug-in is “capabilities aware” – only users with the ability to activate plugins (editors and administrators) will be able to edit plugin management.
+
+Users with no authorization will not be able to activacte or deactivate installed plugins.
 
 == Installation ==
 
