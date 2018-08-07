@@ -38,7 +38,7 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 2. This is the second screen shot
 
 == CONTRIBUTING ==
-We’d love to have you join in on development over on [GitHub Pages](https://github.com/lzcalderaro/wp_lock_plugins).
+We’d love to have you join in on development over on [GitHub Pages](https://github.com/lzcalderaro/wp-lock-plugins).
 
 == Changelog ==
 
