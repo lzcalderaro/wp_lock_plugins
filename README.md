@@ -22,7 +22,6 @@ The plug-in is “capabilities aware” – only users with the ability to activ
 Users with no authorization will not be able to activacte or deactivate installed plugins.
 
 == Installation ==
-
 1. Upload wp-lock-plugin to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to "Settings" -> Lock Plugin
