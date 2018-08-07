@@ -1,11 +1,11 @@
 # WP Lock Plugins #
-Contributors: Luiz Calderaro <lzcalderaro@gmail.com>, Licínio Sousa <licinio@wakeup.pt>
-Tags: Plugin, management, activate, deactivate, prevent, allow
-Requires at least:  4.5.6
-Tested up to: 4.7
-Stable tag:  4.7
-License: GPL-2.0 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: Luiz Calderaro <lzcalderaro@gmail.com>, Licínio Sousa <licinio@wakeup.pt>  
+Tags: Plugin, management, activate, deactivate, prevent, allow  
+Requires at least:  4.5.6  
+Tested up to: 4.7  
+Stable tag:  4.7  
+License: GPL-2.0 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
 Prevent users from activating or deactivating plugins.
 
